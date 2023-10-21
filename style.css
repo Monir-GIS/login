@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Oswald:wght@300&family=Poppins:wght@200&display=swap');
+
+/* font-family: 'Bree Serif', serif;
+font-family: 'Edu VIC WA NT Beginner', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+/* <==== CSS Variable ====>*/
+:root {
+    --primary: #d84e0f;
+    --white: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-image: url("./Distribution2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    height: 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+    opacity: 40%;
+}
+
+.container {
+    height: 100%;
+}
+
+.card{
+    height: 600px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card-header h3{
+    color: var(--white);
+    font-family: 'Bree Serif', serif;
+}
+
+.input-group span{
+    background-color: var(--primary);
+    border: 0px;
+    color: var(--white);
+}
+
+input:focus{
+    outline: 0 0 0 0 ! important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.registration_btn{
+    color: var(--white);
+    background-color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.registration_btn:hover{
+    color: black;
+    background-color: var(--white);
+}
+
+.signup a,
+.signin a {
+    color: var(--primary);
+}
+
+.signin_card{
+    height: 280px;
+}
+
+span {
+    width: 38px;
+}
+.form-control{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-footer{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
